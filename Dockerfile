@@ -4,7 +4,7 @@ RUN apt-get update -q && apt-get upgrade -qq -y && apt-get install -qq -y vim bu
 
 WORKDIR /wrk
 
-COPY ./src/ .
+COPY . .
 
 RUN make
 
